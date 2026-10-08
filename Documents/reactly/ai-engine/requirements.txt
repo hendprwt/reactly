@@ -1,0 +1,7 @@
+redis
+spacy
+python-dotenv
+pymongo
+sentence-transformers
+scikit-learn
+numpy

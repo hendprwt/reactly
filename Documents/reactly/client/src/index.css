@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hilangkan scrollbar tapi tetap fungsi scroll jalan */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #FAFAFA; /* Background sangat terang, bukan putih polos */
+}
+
+/* === RESET MENTIONS (Mode Aman) === */
+.mentions-input textarea {
+  /* Pastikan input punya background putih/transparan normal */
+  background-color: transparent !important; 
+  /* Kembalikan warna teks jadi hitam */
+  color: #0f172a !important; 
+  -webkit-text-fill-color: #0f172a !important;
+  z-index: 10 !important;
+}
+
+/* Sembunyikan layer highlighter (yang bikin bayang/konflik warna) */
+/* Kita korbankan warna biru saat mengetik demi teks yang 100% terbaca */
+.mentions-input div[style*="position: absolute"] {
+  display: none !important; 
+}
+
+/* File: src/index.css */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+  width: 0;
+  height: 0;
+}
